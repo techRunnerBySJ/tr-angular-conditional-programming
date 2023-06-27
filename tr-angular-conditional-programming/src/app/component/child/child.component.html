@@ -1,0 +1,14 @@
+<h3>Child Component</h3>
+
+<p *ngIf="fruits.length > 0">Fruits:</p>
+<ul *ngIf="fruits.length > 0">
+  <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+</ul>
+
+<div [ngSwitch]="condition">
+  <p *ngSwitchCase="'A'">Condition A</p>
+  <p *ngSwitchCase="'B'">Condition B</p>
+  <p *ngSwitchDefault>Default Condition</p>
+</div>
+
+<p>Selected Fruit: {{ selectedFruit }}</p>

@@ -1,0 +1,5 @@
+<h2>Parent Component</h2>
+
+<button (click)="showChild = !showChild">Toggle Child Component</button>
+
+<app-child *ngIf="showChild" [fruits]="fruits" [selectedFruit]="selectedFruit" [condition]="condition"></app-child>
